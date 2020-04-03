@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    Jarvis 7
+  </title>
+  <meta name="description" content="Page Title">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+  <!-- Call App Mode on ios devices -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- Remove Tap Highlight on Windows Phone IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  <!-- base css -->
+  <link rel="stylesheet" media="screen, print" href="css/vendors.bundle.css">
+  <link rel="stylesheet" media="screen, print" href="css/app.bundle.css">
+  <!-- favicon.ico -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" media="screen, print" href="css/styles.css">
+</head>
+
+<body class="mod-bg-1 ">
+  <!-- BEGIN Page Wrapper -->
+  <div class="page-wrapper">
+    <div class="page-inner">
+      <!-- BEGIN Left Aside -->
+      <aside class="page-sidebar">
+
+        <!-- Logo -->
+        <div class="page-logo">
+          <a href="index.html" class="page-logo-link press-scale-down d-flex align-items-center position-relative">
+            <img src="img/logo.png" alt="Ikon Retail Logo" aria-roledescription="logo">
+            <span class="page-logo-text mr-1">Jarvis 7</span>
+            <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
+          </a>
+        </div>
+
+        <!-- BEGIN PRIMARY NAVIGATION -->
+        <ul id="js-nav-menu" class="nav-menu">
+
+          <li class="nav-title">Merchandising</li>
+
+          <!-- Apparel Orders -->
+          <li>
+            <a href="#" title="Apparel Orders">
+              <i class="fal fa-female"></i>
+              <span class="nav-link-text" data-i18n="nav.apparel_orders">Apparel</span>
+            </a>
+            <ul>
+              <li>
+                <a href="ApparelOrdersDashboard.html" title="Apparel Order Dashboard">
+                  <span class="nav-link-text" data-i18n="nav.apparel_orders_dashboard">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="ApparelOrdersList.html" title="Apparel Order List">
+                  <span class="nav-link-text" data-i18n="nav.apparel_orders_list">Orders</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Product Development -->
+          <li>
+            <a href="#" title="Product Development">
+              <i class="fal fa-pencil"></i>
+              <span class="nav-link-text" data-i18n="nav.product_development">Product Development</span>
+            </a>
+            <ul>
+              <li>
+                <a href="ProductDevelopmentDashboard.html" title="Product Development Dashboard">
+                  <span class="nav-link-text" data-i18n="nav.product_development_dashboard">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="ProductDevelopmentList.html" title="Product Development List">
+                  <span class="nav-link-text" data-i18n="nav.product_development_list">List</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Fabric -->
+          <li>
+            <a href="#" title="Fabric Orders">
+              <i class="fal fa-cut"></i>
+              <span class="nav-link-text" data-i18n="nav.fabric_orders">Fabric</span>
+            </a>
+            <ul>
+              <li>
+                <a href="FabricOrderDashboard.html" title="Fabric Orders Dashboard">
+                  <span class="nav-link-text" data-i18n="nav.fabric_orders_dashboard">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="FabricOrderList.html" title="Fabric Orders List">
+                  <span class="nav-link-text" data-i18n="nav.fabric_orders_list">Orders</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-title">Opetarions</li>
+
+          <!-- Back Office -->
+          <li>
+            <a href="#" title="Back Office">
+              <i class="fal fa-building"></i>
+              <span class="nav-link-text" data-i18n="nav.back_office">Back Office</span>
+            </a>
+            <ul>
+              <li>
+                <a href="BackOfficeDistribution.html" title="Distribution">
+                  <span class="nav-link-text" data-i18n="nav.back_office_distribution">Distribution</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-title">Admin</li>
+
+          <!-- User Management -->
+          <li>
+            <a href="#" title="User Management">
+              <i class="fal fa-users"></i>
+              <span class="nav-link-text" data-i18n="nav.admin_user_management">User Management</span>
+            </a>
+            <ul>
+              <li>
+                <a href="AdminUserList.html" title="User List">
+                  <span class="nav-link-text" data-i18n="nav.admin_user_list">User List</span>
+                </a>
+              </li>
+              <li>
+                <a href="AdminUserGroup.html" title="User Group">
+                  <span class="nav-link-text" data-i18n="nav.admin_user_group">User Group</span>
+                </a>
+              </li>
+              <li>
+              <li>
+                <a href="AdminUserRoles.html" title="User Roles">
+                  <span class="nav-link-text" data-i18n="nav.admin_user_roles">User Roles</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Item Creation -->
+          <li>
+            <a href="#" title="Item Creation">
+              <i class="fal fa-database"></i>
+              <span class="nav-link-text" data-i18n="nav.admin_item_creation">Item Creation</span>
+            </a>
+            <ul>
+              <li>
+                <a href="AdminItemCreationDashboard.html" title="Item Creation Dashboard">
+                  <span class="nav-link-text" data-i18n="nav.admin_item_creation_dashboard">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="AdminItemCreationApparelList.html" title="Item Creation Apparel List">
+                  <span class="nav-link-text" data-i18n="nav.admin_item_creation_apparel_list">Apparel</span>
+                </a>
+              </li>
+              <li>
+                <a href="AdminItemCreationFabricList.html" title="Item Creation Fabric List">
+                  <span class="nav-link-text" data-i18n="nav.admin_item_creation_fabric_list">Fabric</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Masters -->
+          <li>
+            <a href="#" title="Masters" data-filter-tags="admin masters">
+              <i class="fal fa-table"></i>
+              <span class="nav-link-text" data-i18n="nav.admin_masters">Masters</span>
+            </a>
+            <ul>
+              <li>
+                <a href="MastersColor.html" title="Masters Color">
+                  <span class="nav-link-text" data-i18n="nav.admin_masters_color">Color</span>
+                </a>
+              </li>
+              <li>
+                <a href="MastersComposition.html" title="Masters Composition">
+                  <span class="nav-link-text" data-i18n="nav.admin_masters_composition">Composition</span>
+                </a>
+              </li>
+              <li>
+                <a href="MastersDcs.html.html" title="Masters DCS">
+                  <span class="nav-link-text" data-i18n="nav.admin_masters_dcs">DCS</span>
+                </a>
+              </li>
+              <li>
+                <a href="MastersDepartment.html" title="Masters Department">
+                  <span class="nav-link-text" data-i18n="nav.admin_masters_department">Department</span>
+                </a>
+              </li>
+              <li>
+                <a href="MastersDetailing.html" title="Masters Detailing">
+                  <span class="nav-link-text" data-i18n="nav.admin_masters_Detailing">Detailing</span>
+                </a>
+              </li>
+              <li>
+                <a href="MastersFabricFinish.html" title="Masters Fabric Type">
+                  <span class="nav-link-text" data-i18n="nav.admin_masters_fabricr_type">Fabric Finish</span>
+                </a>
+              </li>
+              <li>
+                <a href="MastersFabricType.html" title="Masters Fabric Type">
+                  <span class="nav-link-text" data-i18n="nav.admin_masters_fabricr_type">Fabric Type</span>
+                </a>
+              </li>
+              <li>
+                <a href="MastersGarmentMeasurements.html" title="Masters Garment Measurements">
+                  <span class="nav-link-text" data-i18n="nav.admin_masters_garment_measurements">Garment Measurements</span>
+                </a>
+              </li>
+              <li>
+                <a href="MastersLqCode.html.html" title="Masters LQ Code">
+                  <span class="nav-link-text" data-i18n="nav.admin_masters_lq_code">LQ Code</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        </nav>
+        <!-- END PRIMARY NAVIGATION -->
+
+      </aside>
+      <!-- END Left Aside -->
+
+      <div class="page-content-wrapper">
+
+        <!-- BEGIN Page Header -->
+        <header class="page-header" role="banner">
+
+
+          <!-- DOC: nav menu layout change shortcut -->
+          <div class="hidden-md-down dropdown-icon-menu position-relative">
+            <a href="#" class="header-btn btn js-waves-off" data-action="toggle" data-class="nav-function-hidden" title="Hide Navigation">
+              <i class="ni ni-menu"></i>
+            </a>
+          </div>
+
+          <!-- DOC: mobile button appears during mobile width -->
+          <div class="hidden-lg-up">
+            <a href="#" class="header-btn btn press-scale-down" data-action="toggle" data-class="mobile-nav-on">
+              <i class="ni ni-menu"></i>
+            </a>
+          </div>
+
+          <!-- Search Desktop -->
+          <div class="search">
+            <form class="app-forms hidden-xs-down" role="search" action="page_search.html" autocomplete="off">
+              <input type="text" id="search-field" placeholder="Search for anything" class="form-control" tabindex="1">
+              <a href="#" onclick="return false;" class="btn-danger btn-search-close js-waves-off d-none" data-action="toggle" data-class="mobile-search-on">
+                <i class="fal fa-times"></i>
+              </a>
+            </form>
+          </div>
+
+          <div class="ml-auto d-flex">
+
+            <!-- Search Mobile -->
+            <div class="hidden-sm-up">
+              <a href="#" class="header-icon" data-action="toggle" data-class="mobile-search-on" data-focus="search-field" title="Search">
+                <i class="fal fa-search"></i>
+              </a>
+            </div>
+
+            <!-- app notification -->
+            <div>
+              <a href="#" class="header-icon" data-toggle="dropdown" title="Notifications">
+                <i class="fal fa-bell"></i>
+                <span class="badge badge-icon">11</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-animated dropdown-xl">
+                <div class="dropdown-header bg-trans-gradient d-flex justify-content-center align-items-center rounded-top mb-2">
+                  <h4 class="m-0 text-center color-white">
+                    11 New
+                    <small class="mb-0 opacity-80">Notifications</small>
+                  </h4>
+                </div>
+                <ul class="nav nav-tabs nav-tabs-clean" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link px-4 fs-md js-waves-on fw-500" data-toggle="tab" href="#tab-orders" data-i18n="drpdwn.messages">Orders</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-4 fs-md js-waves-on fw-500" data-toggle="tab" href="#tab-reports" data-i18n="drpdwn.feeds">Reports</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-4 fs-md js-waves-on fw-500" data-toggle="tab" href="#tab-tasks" data-i18n="drpdwn.events">Tasks</a>
+                  </li>
+                </ul>
+                <!-- order releated notification -->
+                <div class="tab-content tab-notification">
+                  <div class="tab-pane" id="tab-orders" role="tabpanel">
+                    <div class="custom-scroll h-100">
+                      <ul class="notification">
+                        <li class="unread">
+                          <a href="#" class="d-flex align-items-center">
+                            <span class="d-flex flex-column flex-1 ml-1">
+                              <span class="msg-a fs-sm">New / Updated Order</span>
+                              <span class="msg-b fs-xs">Order ID: ABF/AW20/3320</span>
+                              <span class="msg-b fs-xs">Date: 28/09/2020 Time: 14:32 PM</span>
+                              <span class="fs-nano text-muted mt-1">56 seconds ago</span>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Approval / reports releated notification -->
+                  <div class="tab-pane" id="tab-reports" role="tabpanel">
+                    <div class="custom-scroll h-100">
+                      <ul class="notification">
+                        <li class="unread">
+                          <a href="#" class="d-flex align-items-center">
+                            <span class="d-flex flex-column flex-1 ml-1">
+                              <span class="msg-a fs-sm">Inspection / Approval Report</span>
+                              <span class="msg-b fs-xs">Order ID: ABF/AW20/3320</span>
+                              <span class="msg-b fs-xs">Date: 28/09/2020 Time: 14:32 PM</span>
+                              <span class="fs-nano text-muted mt-1">56 seconds ago</span>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                  <!-- Tasks releated notification -->
+                  <div class="tab-pane" id="tab-tasks" role="tabpanel">
+                    <div class="custom-scroll h-100">
+                      <ul class="notification">
+                        <li>
+                          <a href="#" class="d-flex align-items-center">
+                            <span class="d-flex flex-column flex-1 ml-1">
+                              <span class="msg-a fs-sm">New Task From User: user@example.com</span>
+                              <span class="msg-b fs-xs">Order ID: ABF/AW20/3320</span>
+                              <span class="msg-b fs-xs">Date: 28/09/2020 Time: 14:32 PM</span>
+                              <span class="fs-nano text-muted mt-1">56 seconds ago</span>
+                            </span>
+                          </a>
+                        </li>
+                        <li class="unread">
+                          <a href="#" class="d-flex align-items-center">
+                            <span class="d-flex flex-column flex-1 ml-1">
+                              <span class="msg-a fs-sm">New Task From User: user@example.com</span>
+                              <span class="msg-b fs-xs">Order ID: ABF/AW20/2865</span>
+                              <span class="msg-b fs-xs">Date: 19/09/2020 Time: 14:32 PM</span>
+                              <span class="fs-nano text-muted mt-1">2 Weeks Ago</span>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-2 px-3 bg-faded d-block rounded-bottom text-right border-faded border-bottom-0 border-right-0 border-left-0">
+                  <a href="#" class="fs-xs fw-500 ml-auto">view all notifications</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- app settings not done -->
+            <div class="hidden-md-down">
+              <a href="#" class="header-icon" data-toggle="modal" data-target=".js-modal-settings" title="Settings">
+                <i class="fal fa-cog"></i>
+              </a>
+            </div>
+
+            <!-- app dark mode not done-->
+            <div class="hidden-md-down">
+              <a href="#" class="header-icon" data-toggle="modal" data-target=".js-modal-settings" title="Dark Mode">
+                <i class="fal fa-moon"></i>
+              </a>
+            </div>
+
+            <!-- app Help not done-->
+            <div class="hidden-md-down">
+              <a href="#" class="header-icon" data-toggle="modal" data-target=".js-modal-settings" title="Help">
+                <i class="fal fa-question"></i>
+              </a>
+            </div>
+
+
+            <!-- app user menu -->
+            <div>
+              <!-- Loginser Email comes in place of title -->
+              <a href="#" data-toggle="dropdown" title="loginuser@example.com" class="header-icon d-flex align-items-center justify-content-center">
+                <i class="fal fa-user"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-animated dropdown-lg">
+                <div class="dropdown-header bg-trans-gradient d-flex flex-row py-4 rounded-top">
+                  <div class="d-flex flex-row align-items-center mt-1 mb-1 color-white">
+                    <div class="info-card-text">
+                      <!-- Loginser name & Email comes here -->
+                      <div class="fs-lg text-truncate text-truncate-lg">First Name Last Name</div>
+                      <span class="text-truncate text-truncate-md opacity-80">loginuser@example.com</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-divider m-0"></div>
+                <a href="#" class="dropdown-item" data-action="app-fullscreen">
+                  <span data-i18n="drpdwn.fullscreen">Full Screen</span>
+                  <i class="float-right text-muted fw-n">F11</i>
+                </a>
+                <a href="#" class="dropdown-item" data-action="app-print">
+                  <span data-i18n="drpdwn.print">Print Page</span>
+                  <i class="float-right text-muted fw-n">Ctrl + P</i>
+                </a>
+                <a class="dropdown-item" href="ChangePassword.html">
+                  <span data-i18n="drpdwn.password-change">Change Password</span>
+                </a>
+                <div class="dropdown-divider m-0"></div>
+                <a class="dropdown-item fw-500 pt-3 pb-3" href="Login.html">
+                  <span data-i18n="drpdwn.page-logout">Logout</span>
+                </a>
+              </div>
+            </div>
+
+        </header>
+        <!-- END Page Header -->
+
+        <!-- BEGIN Page Content -->
+
+        <!-- the #js-page-content id is needed for some plugins to initialize -->
+        <main id="js-page-content" role="main" class="page-content">
+          <ol class="breadcrumb page-breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="position-absolute pos-top pos-right d-none d-sm-block"><span class="js-get-date"></span></li>
+          </ol>
+          <div class="subheader">
+            <h1 class="subheader-title">
+              Blank Page
+            </h1>
+          </div>
+
+
+          <!-- main content goes below here: -->
+          <div class="row">
+            <div class="col-xl-12">
+              <div id="panel-1" class="panel">
+                <div class="panel-hdr">
+                  <h2>
+                    Panel <span class="fw-300"><i>Title</i></span>
+                  </h2>
+                  <div class="panel-toolbar">
+                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                  </div>
+                </div>
+                <div class="panel-container show">
+                  <div class="panel-content">
+                    <div class="panel-tag">
+                      hello
+                    </div>
+                    <p>
+                      Offers it children. Been far good the or so eye. And first the her to white unionized that the absolutely supplies hall to named accuse times had or the to in the monitor a by carefully and than train excessive turned been a
+                      rationale to be the little. Agency still a the supported or people out doing place what does one studies of that value designer the you line their transformed extent, you to for not must reflection chequered with got rush than
+                      because he with thoughts until sisters term much and bed they of duty organization. And ago. As.
+                      Offers it children. Been far good the or so eye. And first the her to white unionized that the absolutely supplies hall to named accuse times had or the to in the monitor a by carefully and than train excessive turned been a
+                      rationale to be the little. Agency still a the supported or people out doing place what does one studies of that value designer the you line their transformed extent, you to for not must reflection chequered with got rush than
+                      because he with thoughts until sisters term much and bed they of duty organization. And ago. As.
+                      Offers it children. Been far good the or so eye. And first the her to white unionized that the absolutely supplies hall to named accuse times had or the to in the monitor a by carefully and than train excessive turned been a
+                      rationale to be the little. Agency still a the supported or people out doing place what does one studies of that value designer the you line their transformed extent, you to for not must reflection chequered with got rush than
+                      because he with thoughts until sisters term much and bed they of duty organization. And ago. As.
+                      Offers it children. Been far good the or so eye. And first the her to white unionized that the absolutely supplies hall to named accuse times had or the to in the monitor a by carefully and than train excessive turned been a
+                      rationale to be the little. Agency still a the supported or people out doing place what does one studies of that value designer the you line their transformed extent, you to for not must reflection chequered with got rush than
+                      because he with thoughts until sisters term much and bed they of duty organization. And ago. As.
+                      Offers it children. Been far good the or so eye. And first the her to white unionized that the absolutely supplies hall to named accuse times had or the to in the monitor a by carefully and than train excessive turned been a
+                      rationale to be the little. Agency still a the supported or people out doing place what does one studies of that value designer the you line their transformed extent, you to for not must reflection chequered with got rush than
+                      because he with thoughts until sisters term much and bed they of duty organization. And ago. As.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- this overlay is activated only when mobile menu is triggered -->
+        <div class="page-content-overlay" data-action="toggle" data-class="mobile-nav-on"></div>
+        <!-- END Page Content -->
+
+
+        <!-- BEGIN Page Footer -->
+        <footer class="page-footer" role="contentinfo">
+          <div class="d-flex align-items-center flex-1 text-muted">
+            <span class="hidden-md-down fw-700">2020 © Ikon </span>
+          </div>
+        </footer>
+        <!-- END Page Footer -->
+
+
+        <!-- BEGIN Color profile -->
+        <!-- this area is hidden and will not be seen on screens or screen readers -->
+        <!-- we use this only for CSS color refernce for JS stuff -->
+        <p id="js-color-profile" class="d-none">
+          <span class="color-primary-50"></span>
+          <span class="color-primary-100"></span>
+          <span class="color-primary-200"></span>
+          <span class="color-primary-300"></span>
+          <span class="color-primary-400"></span>
+          <span class="color-primary-500"></span>
+          <span class="color-primary-600"></span>
+          <span class="color-primary-700"></span>
+          <span class="color-primary-800"></span>
+          <span class="color-primary-900"></span>
+          <span class="color-info-50"></span>
+          <span class="color-info-100"></span>
+          <span class="color-info-200"></span>
+          <span class="color-info-300"></span>
+          <span class="color-info-400"></span>
+          <span class="color-info-500"></span>
+          <span class="color-info-600"></span>
+          <span class="color-info-700"></span>
+          <span class="color-info-800"></span>
+          <span class="color-info-900"></span>
+          <span class="color-danger-50"></span>
+          <span class="color-danger-100"></span>
+          <span class="color-danger-200"></span>
+          <span class="color-danger-300"></span>
+          <span class="color-danger-400"></span>
+          <span class="color-danger-500"></span>
+          <span class="color-danger-600"></span>
+          <span class="color-danger-700"></span>
+          <span class="color-danger-800"></span>
+          <span class="color-danger-900"></span>
+          <span class="color-warning-50"></span>
+          <span class="color-warning-100"></span>
+          <span class="color-warning-200"></span>
+          <span class="color-warning-300"></span>
+          <span class="color-warning-400"></span>
+          <span class="color-warning-500"></span>
+          <span class="color-warning-600"></span>
+          <span class="color-warning-700"></span>
+          <span class="color-warning-800"></span>
+          <span class="color-warning-900"></span>
+          <span class="color-success-50"></span>
+          <span class="color-success-100"></span>
+          <span class="color-success-200"></span>
+          <span class="color-success-300"></span>
+          <span class="color-success-400"></span>
+          <span class="color-success-500"></span>
+          <span class="color-success-600"></span>
+          <span class="color-success-700"></span>
+          <span class="color-success-800"></span>
+          <span class="color-success-900"></span>
+          <span class="color-fusion-50"></span>
+          <span class="color-fusion-100"></span>
+          <span class="color-fusion-200"></span>
+          <span class="color-fusion-300"></span>
+          <span class="color-fusion-400"></span>
+          <span class="color-fusion-500"></span>
+          <span class="color-fusion-600"></span>
+          <span class="color-fusion-700"></span>
+          <span class="color-fusion-800"></span>
+          <span class="color-fusion-900"></span>
+        </p>
+        <!-- END Color profile -->
+
+      </div>
+    </div>
+  </div>
+  <!-- END Page Wrapper -->
+
+  <!-- BEGIN Quick Menu -->
+  <!-- to add more items, please make sure to change the variable '$menu-items: number;' in your _page-components-shortcut.scss -->
+  <nav class="shortcut-menu d-none d-sm-block">
+    <input type="checkbox" class="menu-open" name="menu-open" id="menu_open" />
+    <label for="menu_open" class="menu-open-button ">
+      <span class="app-shortcut-icon d-block"></span>
+    </label>
+    <a href="#" class="menu-item btn" data-toggle="tooltip" data-placement="left" title="Scroll Top">
+      <i class="fal fa-arrow-up"></i>
+    </a>
+    <!-- Scroll Down Not Working -->
+    <a href="#" class="menu-item btn" data-toggle="tooltip" data-placement="left" title="Scroll Down">
+      <i class="fal fa-arrow-down"></i>
+    </a>
+    <a href="Login.html" class="menu-item btn" data-toggle="tooltip" data-placement="left" title="Logout">
+      <i class="fal fa-sign-out"></i>
+    </a>
+    <a href="#" class="menu-item btn" data-action="app-fullscreen" data-toggle="tooltip" data-placement="left" title="Full Screen">
+      <i class="fal fa-expand"></i>
+    </a>
+    <a href="#" class="menu-item btn" data-action="app-print" data-toggle="tooltip" data-placement="left" title="Print page">
+      <i class="fal fa-print"></i>
+    </a>
+  </nav>
+  <!-- END Quick Menu -->
+
+  <!-- base vendor bundle:
+			 DOC: if you remove pace.js from core please note on Internet Explorer some CSS animations may execute before a page is fully loaded, resulting 'jump' animations
+						+ pace.js (recommended)
+						+ jquery.js (core)
+						+ jquery-ui-cust.js (core)
+						+ popper.js (core)
+						+ bootstrap.js (core)
+						+ slimscroll.js (extension)
+						+ app.navigation.js (core)
+						+ ba-throttle-debounce.js (core)
+						+ waves.js (extension)
+						+ smartpanels.js (extension)
+						+ src/../jquery-snippets.js (core) -->
+  <script src="js/vendors.bundle.js"></script>
+  <script src="js/app.bundle.js"></script>
+  <!--This page contains the basic JS and CSS files to get started on your project. If you need aditional addon's or plugins please see scripts located at the bottom of each page in order to find out which JS/CSS files to add.-->
+</body>
+
+</html>
